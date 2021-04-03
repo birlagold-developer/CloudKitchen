@@ -1,0 +1,115 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="Theme.CMCK.DayNight" parent="Theme.CMCK" />
+
+    <style name="Theme.CMCK" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!--Color-->
+        <item name="colorPrimary">@color/cmck_blue_700</item>
+        <item name="colorPrimaryVariant">@color/cmck_blue_800</item>
+        <item name="colorSecondary">@color/cmck_orange_500</item>
+        <item name="colorSecondaryVariant">@color/cmck_orange_400</item>
+
+        <item name="android:colorBackground">@color/cmck_white_50</item>
+        <item name="colorSurface">@color/cmck_white_50</item>
+        <item name="colorPrimarySurfaceVariant">?attr/colorPrimaryVariant</item>
+        <item name="colorError">@color/cmck_red_400</item>
+
+        <item name="colorOnPrimary">@color/cmck_white_50</item>
+        <item name="colorOnSecondary">@color/cmck_black_900</item>
+        <item name="colorOnBackground">@color/cmck_black_900</item>
+        <item name="colorOnSurface">@color/cmck_black_900</item>
+        <item name="colorOnError">@color/cmck_black_900</item>
+
+        <item name="scrimBackground">@color/cmck_white_50</item>
+        <item name="android:statusBarColor">@color/cmck_white_50</item>
+        <item name="android:navigationBarColor">@color/nav_bar</item>
+
+        <!--<item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.CMCK.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.CMCK.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.CMCK.LargeComponent</item>-->
+
+        <!--Typography-->
+        <item name="textAppearanceHeadline2">@style/TextAppearance.CMCK.Headline2</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.CMCK.Headline3</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.CMCK.Headline4</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.CMCK.Headline5</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.CMCK.Headline6</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.CMCK.Subtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.CMCK.Subtitle2</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.CMCK.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.CMCK.Body2</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.CMCK.Caption</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.CMCK.Overline</item>
+        <item name="emphasisHighAlpha">0.87</item>
+        <item name="emphasisMediumAlpha">0.60</item>
+        <item name="emphasisDisabledAlpha">0.38</item>
+
+        <item name="motionInterpolatorPersistent">@android:interpolator/fast_out_slow_in</item>
+        <item name="motionInterpolatorIncoming">@android:interpolator/decelerate_cubic</item>
+        <item name="motionInterpolatorOutgoing">@android:interpolator/accelerate_cubic</item>
+
+        <!--Styles-->
+        <item name="bottomAppBarStyle">@style/Widget.MaterialComponents.BottomAppBar.PrimarySurface</item>
+        <item name="bottomSheetStyle">@style/Widget.MaterialComponents.BottomSheet.Modal</item>
+
+        <item name="materialButtonStyle">@style/TextAppearance.CMCK.OrderButton</item>
+        <!--System/Platform attributes-->
+        <item name="android:windowBackground">?android:colorBackground</item>
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
+    </style>
+
+    <style name="TextAppearance.CMCK.OrderButton" parent="Widget.MaterialComponents.Button">
+        <item name="fontFamily">@font/work_sans_medium</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/button_text_color</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="backgroundTint">?attr/colorSecondary</item>
+        <item name="android:padding">20dp</item>
+        <item name="iconTint">@color/button_text_color</item>
+        <item name="rippleColor">@color/button_ripple_color</item>
+    </style>
+
+    <style name="ButtonWithDrawable">
+        <item name="fontFamily">@font/work_sans_medium</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/button_text_color</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="backgroundTint">?attr/colorSecondary</item>
+        <item name="iconTint">@color/button_text_color</item>
+        <item name="rippleColor">@color/button_ripple_color</item>
+        <item name="android:layout_marginBottom">30dp</item>
+    </style>
+
+    <style name="MainLayout">
+        <item name="android:layout_marginLeft">@dimen/commmon_layout_margin</item>
+        <item name="android:layout_marginRight">@dimen/commmon_layout_margin</item>
+    </style>
+
+    <style name="CommonMargin">
+        <item name="android:layout_margin">@dimen/commmon_ui_margin</item>
+    </style>
+
+    <style name="TextInputEditTextStyle">
+        <item name="android:background">@drawable/border_text_input_layout</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:drawablePadding">@dimen/commmon_ui_margin</item>
+        <item name="fontFamily">@font/work_sans_medium</item>
+    </style>
+
+    <style name="ToolbarStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="ToolbarStyle.AttributeIcon">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:background">@color/colorTransparent</item>
+    </style>
+
+</resources>

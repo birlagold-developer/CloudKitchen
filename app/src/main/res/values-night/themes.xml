@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.CMCK.DayNight" parent="Theme.CMCK.Dark" />
+
+    <style name="Theme.CMCK.Dark" parent="Theme.CMCK">
+        <!--Color-->
+        <item name="colorPrimary">@color/cmck_blue_200</item>
+        <item name="colorPrimaryVariant">@color/cmck_blue_300</item>
+        <item name="colorSecondary">@color/cmck_orange_500</item>
+        <item name="colorSecondaryVariant">@color/cmck_orange_400</item>
+
+        <item name="android:colorBackground">@color/cmck_black_900</item>
+        <item name="colorSurface">@color/cmck_black_800</item>
+        <item name="colorPrimarySurfaceVariant">?attr/colorSurface</item>
+        <item name="colorError">@color/cmck_red_200</item>
+
+        <item name="colorOnPrimary">@color/cmck_black_900</item>
+        <item name="colorOnSecondary">@color/cmck_black_900</item>
+        <item name="colorOnBackground">@color/cmck_white_50</item>
+        <item name="colorOnSurface">@color/cmck_white_50</item>
+        <item name="colorOnError">@color/cmck_black_900</item>
+
+        <item name="scrimBackground">@color/cmck_black_900_alpha_087</item>
+        <item name="android:statusBarColor">@color/cmck_black_900_alpha_060</item>
+
+        <item name="elevationOverlayEnabled">true</item>
+
+        <!--System/Platform attributes-->
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">false</item>
+    </style>
+
+</resources>

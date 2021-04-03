@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">CloudKitchen</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <!--buttons-->
+    <string name="btn_continue">Continue</string>
+    <string name="btn_add_to_cart">Add To Cart</string>
+    <string name="btn_resend">Resend</string>
+    <string name="btn_checkout">Checkout</string>
+    <string name="btn_add">Add</string>
+    <string name="btn_change">Change</string>
+    <string name="btn_use_current_location">Use my current location</string>
+
+
+    <!--order type screen-->
+    <string name="tv_orderfragment">Welcome to Chhotu Maharaj!</string>
+    <string name="btn_pick_orderfragment">I’ll pickup my order</string>
+    <string name="btn_delivery_orderfragment">I want a delivery</string>
+
+    <string name="tv_select_pickup_store">Select Pickup Store</string>
+    <string name="tv_which_store">Which store do you want to order from?</string>
+    <string name="et_select_city">Select City</string>
+    <string name="et_select_outlet">Select Outlet</string>
+
+    <string name="tv_setup_location">Setup Location</string>
+    <string name="tv_setup_location_note">Please select a location or choose from saved addresses,  so that we can check if our delivery service can reach you.</string>
+    <string name="et_select_location">Select Location</string>
+
+    <string name="tv_choose_outlet">Choose outlet</string>
+    <string name="tv_choose_outlet_note">Click one of the available locations delivering to you.</string>
+
+    <!--main screen-->
+    <string name="tv_delicious_food_delivery">Delicious Food</string>
+    <string name="tv_we_made_fresh_and_healthy_food">We made fresh and Healthy food</string>
+    <string name="et_search_menu">Search menu</string>
+    <string name="tv_recommended_for_you">Recommended for you</string>
+    <string name="tv_customizable">Customizable</string>
+
+    <!--menu detail screen-->
+    <string name="tv_description">Description</string>
+
+    <!--login screen-->
+    <string name="tv_login">Login</string>
+    <string name="tv_login_note">Chhotu Maharaj requires a phone number to contact you  about your order, please provide your mobile number to  verify your account.</string>
+    <string name="et_mobile_number">Mobile Number</string>
+    <string name="tv_otp_to_this_number">We will send an OTP to this number.</string>
+    <string name="tv_enter_your_otp">Enter your OTP</string>
+    <string name="tv_verify_otp">Please enter the one-time password we sent to verify  your account.</string>
+
+    <!--my order screen-->
+    <string name="tv_my_order">My Order</string>
+    <string name="tv_delivery_to">Delivery to</string>
+    <string name="tv_discount">Discount</string>
+    <string name="tv_taxes_charges">Taxes &amp; Charges</string>
+    <string name="tv_total">Total</string>
+
+    <!--address screen-->
+    <string name="tv_select_address">Select Address</string>
+    <string name="tv_map_location">Map Location</string>
+    <string name="et_enter_room_society">Enter Room no and Society</string>
+    <string name="et_apartment_and_building">Apartment and Building</string>
+    <string name="et_landmark">Landmark</string>
+    <string name="et_address_name">Address Name</string>
+
+
+</resources>

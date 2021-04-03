@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ordertype.OrderTypeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/MainLayout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_orderfragment"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:layout_above="@+id/btn_pick_order"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_pick_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_pick_orderfragment"
+            style="@style/CommonMargin"
+            android:layout_above="@+id/btn_deliver_order"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_deliver_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/btn_delivery_orderfragment"
+            style="@style/CommonMargin"/>
+
+        <!--<androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/filledBoxTextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/btn_delivery_orderfragment"
+            style="@style/TextInputEditTextStyle"
+            android:drawableRight="@drawable/ic_round_cancel"
+            android:drawableLeft="@drawable/ic_baseline_search"/>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_continue"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/btn_continue"
+            style="@style/ButtonWithDrawable"
+            android:layout_alignParentBottom="true"
+            app:icon="@drawable/ic_round_arrow_right"
+            app:iconGravity="end"
+            />-->
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
