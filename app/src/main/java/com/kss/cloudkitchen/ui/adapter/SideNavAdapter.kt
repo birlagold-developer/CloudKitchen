@@ -13,6 +13,7 @@ class SideNavAdapter(private val onItemClick: ((position: Int, item: SideNavItem
     var menuItemsList = ArrayList<SideNavItem>()
 
     fun setNavItemsData( list: List<SideNavItem>){
+        menuItemsList.clear()
         menuItemsList.addAll(list)
         notifyDataSetChanged()
     }

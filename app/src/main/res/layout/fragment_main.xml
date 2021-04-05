@@ -13,14 +13,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <androidx.appcompat.widget.AppCompatImageView
-            android:layout_width="wrap_content"
-            android:id="@+id/im_hamburger"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:padding="13dp"
-            app:srcCompat="@drawable/ic_round_menu"
-            tools:ignore="VectorDrawableCompat" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="wrap_content"
@@ -31,6 +23,15 @@
             app:srcCompat="@drawable/ic_outline_shopping_cart"
             tools:ignore="VectorDrawableCompat"
             android:layout_alignParentRight="true"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/im_hamburger"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="13dp"
+            app:srcCompat="@drawable/ic_round_menu"
+            tools:ignore="VectorDrawableCompat"/>
 
     </RelativeLayout>
 
@@ -75,7 +76,8 @@
     <androidx.drawerlayout.widget.DrawerLayout
         android:id="@+id/drawer_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeone">
 
         <com.google.android.material.navigation.NavigationView
             android:id="@+id/side_nav_view"
@@ -93,5 +95,7 @@
 
         </com.google.android.material.navigation.NavigationView>
     </androidx.drawerlayout.widget.DrawerLayout>
+
+
 
 </RelativeLayout>

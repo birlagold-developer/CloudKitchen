@@ -6,31 +6,108 @@ android:layout_width="match_parent"
 android:layout_height="match_parent"
 tools:context=".ui.address.AddAddressFragment">
 
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/leftBtn"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="15dp"
+        android:background="@drawable/ic_back"
+        style="@style/ToolbarStyle.AttributeIcon"/>
 
-    <include
-        android:id="@+id/header_VIEW"
-        android:layout_width="match_parent"
-        android:layout_height="?actionBarSize"
-        layout="@layout/custom_toolbar"
-        />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/viewEmployees"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:padding="4dp"
-        android:layout_below="@+id/header_VIEW"
-        />
+        android:orientation="vertical"
+        android:weightSum="10">
 
-</RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4.5"
+            android:orientation="vertical">
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5.5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                style="@style/MainLayout">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_map_location"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"
+                    android:textColor="@color/dark_gray"
+                    android:layout_marginTop="16dp"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_maplocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_map_location"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"
+                    android:textColor="@color/cmck_black_800"
+                    android:layout_marginTop="10dp"
+                    android:maxLines="3"
+                    />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_room_no_society"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="@string/et_enter_room_society"
+                    style="@style/TextInputEditTextStyle"/>
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_apartment_building"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="@string/et_apartment_and_building"
+                    style="@style/TextInputEditTextStyle"/>
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_landmark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="@string/et_landmark"
+                    style="@style/TextInputEditTextStyle"/>
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_address_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="@string/et_address_name"
+                    style="@style/TextInputEditTextStyle"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_continue"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/btn_continue"
+                    style="@style/ButtonWithDrawable"
+                    android:layout_alignParentBottom="true"
+                    android:drawableRight="@drawable/ic_round_arrow_right"
+                    />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
 
 </RelativeLayout>

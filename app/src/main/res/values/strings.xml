@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">CloudKitchen</string>
+    <string name="google_maps_key">AIzaSyCHcVfNb0lYP_QjvnVDkly9prtBwMNx534</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="dummy_button">Dummy Button</string>
@@ -13,7 +15,6 @@
     <string name="btn_add">Add</string>
     <string name="btn_change">Change</string>
     <string name="btn_use_current_location">Use my current location</string>
-
 
     <!--order type screen-->
     <string name="tv_orderfragment">Welcome to Chhotu Maharaj!</string>

@@ -1,36 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/root_layout"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/root_layout"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".ui.address.AddressFragment">
+
+<include
+    android:id="@+id/header_VIEW"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    layout="@layout/custom_toolbar"
+    />
+
+<RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.address.AddressFragment">
+    android:layout_below="@+id/header_VIEW"
+    style="@style/MainLayout">
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <include
-            android:id="@+id/header_VIEW"
-            android:layout_width="match_parent"
-            android:layout_height="?actionBarSize"
-            layout="@layout/custom_toolbar"
-            />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_select_address"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/cmck_black_800"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_alignParentLeft="true"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_resend"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_add"
+                style="@style/ButtonWithDrawable"
+                android:drawableRight="@drawable/ic_round_add"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/viewEmployees"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:padding="4dp"
-            android:layout_below="@+id/header_VIEW"
+
             />
 
-    </RelativeLayout>
+    </LinearLayout>
 
+
+</RelativeLayout>
 </RelativeLayout>
